@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TargetAim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/icone.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body>
+    <main>
+      <section class="container-central">
+        <div class="tela-lgn">
+          <p>Target Aiming</p>
+          <p2>Quer treinar sua mira? Então você está no lugar certo.</p2>
+          <label for="nome">Usuário:</label>
+          <input type="text" maxlength="16" id="nome" placeholder="Nome de Usuário">
+          <label for="avatar">Avatar:</label>
+          <select name="avatar" id="avatar">
+            <option value="media/fallen-careca.jpg">Professor</option>
+            <option value="media/neymar.jpg">Neymar</option>
+            <option value="media/pato.jpg">Pato</option>
+            <option value="media/cria.jpg">Cria</option>
+            <option value="media/barril.png">Pesadelo</option>
+          </select>
+          <button id="comecar" >Começar</button>
+        </div>
+      </section>
+      
+      <section class="menu-lateral-sec">
+        <div class="menu-lateral-usuario">
+          <img src="media/pato.jpg" id="foto-usuario" alt="avatar">
+          <div class="saudacao">
+          <h3>Bem Vindo(a)</h3>
+          <p id="usuario" id="nome-usuario">Usuário...</p>
+          </div>
+        </div>
+
+       <div class="conteudo">
+          <div id="piechart" style="width: 400px; height: 300px;"></div>
+
+          <div class="informacoes">
+            <h5>Tempo</h5>
+            <p id="tempo">----</p>
+          </div>
+
+          <div class="informacoes">
+            <h5>Pontuação</h5>
+            <p id='50-alvos'>----</p>
+          </div>
+
+          <div class="informacoes">
+            <h5>Sequência de Acertos</h5>
+            <p id="sequencia">----</p>
+          </div>
+       </div>
+      </section>
+
+      <section class="menu-lateral-opcoes">
+        <div class="conteudo">
+          <div class="informacoes">
+            <h5>Selecione o Modo</h5>
+          </div>
+
+          <div class="dropdown">
+            <button id="botoes" id="botao-funciona" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              50 Alvos
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a id="facil" class="dropdown-item" href="indexJogo.html">Iniciar</a></li>
+            </ul>
+          </div>
+          <span class="d-inline-block" tabindex="1" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Em Breve">
+            <button id="botoes" id="botoes-desabilitados" class="btn btn-primary" type="button" disabled>Time Limit</button>
+          </span>
+
+          <span  class="d-inline-block" tabindex="1" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Em Breve">
+            <button id="botoes" id="botoes-desabilitados"  class="btn btn-primary" type="button" disabled>3 Vidas</button>
+          </span>
+       </div>
+        
+       <button class="btn btn-primary" id="botao-creditos" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Créditos</button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Créditos</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <section class="apresentacao">
+
+              <div id="davi" >
+                <img class="foto" src="imgsfotos/davireal.gif">
+                <h1>Davi Martins: </h1>
+                </p>    
+                  Salve, meu nome é Davi, tenho 16 anos, fiz a maioria das animações, e quem procurou sobre as bibliotecas e APIs.
+                </p>
+              </div>
+            
+              <div id="miguel">
+                <img class="foto" src="imgsfotos/rei-do-kuduro.gif">
+                <h1>Miguel Henrique:</h1>
+                <p>
+                  Olá, meu nome é Miguel, tenho 15 anos. Eu fiz algumas animações, CSS e códigos JavaScript.
+                </p>  
+              </div>
+        
+              <div id="israel">
+                <img class="foto" src="imgsfotos/fumo!!!!.gif">
+                  <h1>Israel Davi: </h1>
+                  </p>    
+                    Oioi eu to aqui de novo~⭐
+                    Ajudei mais em umas revisões em estruturação e na parte de testes.
+                  </p>
+              </div>
+  
+              <div id="santana">
+                <img class="foto" src="imgsfotos/hu-tao.gif">
+                <h1>Santana:</h1>
+                <p>F, the hood lost a real one.</p>
+              </div>
+
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <video id="videoBG" autoplay muted loop>
+        <source src="media/BGVideo2.mp4" type="video/mp4">
+      </video>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="index.js"></script>
+  </body>    
+</html>
